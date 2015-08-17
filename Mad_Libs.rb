@@ -32,6 +32,7 @@ class Mad_Libs
 
   def different_madlibs
     if @number == 1
+      puts ""
       print "Pick a noun : "
       @noun = gets.chomp
       puts ""
@@ -62,6 +63,7 @@ class Mad_Libs
       puts "Well it is."
       play_again
     elsif @number == 2
+      puts ""
       print "Pick a adjective : "
       @adjective = gets.chomp
       puts ""
@@ -84,6 +86,58 @@ class Mad_Libs
       puts "here a #{@sound}, there a #{@sound}"
       puts "everywhere a #{@sound} #{@sound},"
       puts "#{@adjective} Macdonald had a #{@noun}, E-I-E-I-O"
+      play_again
+    elsif @number == 3
+      puts ""
+      print "Pick a name of company : "
+      @company = gets.chomp
+      puts ""
+      print "Pick a plural noun : "
+      @plural_noun = gets.chomp
+      puts ""
+      print "Pick a number : "
+      @number = gets.chomp
+      puts ""
+      print "Pick a present tense verb ending in 'ing' : "
+      @present_tense = gets.chomp
+      puts ""
+      print "Pick a noun : "
+      @noun= gets.chomp
+      puts ""
+      print "Pick a name of a man or boy : "
+      @name = gets.chomp
+      puts ""
+      print "Pick your favorite color : "
+      @color = gets.chomp
+      puts ""
+      print "Pick a noun : "
+      @noun_2 = gets.chomp
+      puts ""
+      print "Pick a past tense verb : "
+      @past_tense = gets.chomp
+      puts ""
+      print "Pick an adjective : "
+      @adjective = gets.chomp
+      puts ""
+      print "Pick a kind of room in a building (such as the attic, the hallway, etc.) : "
+      @room = gets.chomp
+      puts ""
+      puts "Here is your mad libs : "
+      puts ""
+      puts ""
+      puts "At #{@company}, everybody sits in #{@plural_noun} that are spaced #{@number} feet "
+      puts "away from each other. This makes #{@present_tense} on the #{@noun} a "
+      puts "public activity, because everyone around can "
+      puts "hear what you are saying. It's a wonder that "
+      puts "people get any work done with all the noise."
+      puts ""
+      puts ""
+      puts "There is an employee at #{@company} named #{@name}. He used "
+      puts "to have a #{@color} #{@noun_2} on his desk, but somebody #{@past_tense} it. "
+      puts "After the loss of his #{@noun_2}, #{@name} started muttering to "
+      puts "himself a lot. He looked really #{@adjective}. I guess he "
+      puts "was annoying people, because the company "
+      puts "moved his desk into the #{@room}."
       play_again
     else
      puts "that's not an answer"

@@ -18,7 +18,7 @@ class Mad_Libs
         exit
       else
         puts "thats not an answer"
-        again
+        play_again
       end
     end
 
@@ -70,6 +70,7 @@ class Mad_Libs
       puts ""
       print "Pick an animal : "
       @animal = gets.chomp
+      puts ""
       print "Pick a sound : "
       @sound = gets.chomp.capitalize
       puts ""
